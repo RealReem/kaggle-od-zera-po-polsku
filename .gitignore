@@ -1,0 +1,24 @@
+# 1. Kopia zapasowa prywatnych notatek i wcześniejszych eksperymentów
+_backup_moje_notatki/
+
+# 2. Surowe pliki danych z Kaggle w folderach data/ (z zachowaniem pustych folderów dzięki .gitkeep)
+data/*.csv
+data/*.txt
+*/data/*.csv
+*/data/*.txt
+**/data/*.csv
+**/data/*.txt
+!**/data/.gitkeep
+
+# 3. Wygenerowane pliki wynikowe / zgłoszeniowe na Kaggle
+submission*.csv
+**/submission_*.csv
+**/submission*.csv
+
+# 4. Tymczasowe pliki Jupyter Notebook, Python oraz pliki systemowe
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+__pycache__/
+**/__pycache__/
+.DS_Store
+**/.DS_Store
